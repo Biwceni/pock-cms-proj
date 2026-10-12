@@ -1,0 +1,47 @@
+{
+  "name": "pock-cms-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "seed:phase-2": "node --import tsx/esm scripts/seed-phase-2.mts",
+    "verify:phase-2:production": "node --import tsx/esm scripts/verify-phase-2-production.mts",
+    "test:integration": "node --import tsx/esm --test --test-force-exit tests/access.integration.test.mts",
+    "test:unit": "node --import tsx/esm --test tests/unit.test.mts",
+    "test:editor-route": "node --test tests/puck-editor-route.e2e.test.mjs",
+    "test:phase-6:e2e": "node --test tests/phase-6.e2e.test.mjs",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "^3.90.2",
+    "@payloadcms/next": "^3.90.2",
+    "@payloadcms/richtext-lexical": "^3.90.2",
+    "@puckeditor/core": "^0.23.0",
+    "next": "16.4.0",
+    "payload": "^3.90.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "overrides": {
+    "dompurify": "3.4.16",
+    "undici": "7.30.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "pg": "^8.20.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.4",
+    "typescript": "^5"
+  }
+}

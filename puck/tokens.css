@@ -1,0 +1,14 @@
+:root {
+  --puck-color-ink: #172033;
+  --puck-color-muted: #586579;
+  --puck-color-primary: #2457d6;
+  --puck-color-primary-hover: #1944ad;
+  --puck-color-surface: #ffffff;
+  --puck-color-surface-muted: #f3f5f8;
+  --puck-color-border: #d8deea;
+  --puck-radius-card: 1rem;
+  --puck-radius-control: 0.55rem;
+  --puck-content-width: 72rem;
+  --puck-space-section: clamp(3rem, 8vw, 6rem);
+  --puck-font-body: var(--font-geist-sans, Arial, sans-serif);
+}
